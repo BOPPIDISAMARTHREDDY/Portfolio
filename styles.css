@@ -1,0 +1,165 @@
+/* Enhanced CSS for Beautiful Portfolio */
+
+:root {
+    --primary-color: #ffcc00;
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --accent-color: #ff6600;
+    --card-bg: #333;
+    --hover-color: #ff9900;
+    --font-main: 'Poppins', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: var(--primary-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  nav ul li a {
+    color: var(--bg-color);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    color: var(--hover-color);
+  }
+  
+  /* Sections */
+  section {
+    padding: 60px 10%;
+    text-align: center;
+  }
+  
+  /* About Section */
+  .about img {
+    width: 150px;
+    border-radius: 75%;
+    border: 3px solid var(--primary-color);
+    margin: 20px 0;
+    transition: transform 0.3s;
+  }
+  
+  .about img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Projects Section */
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .project-card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .project-card img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .project-card a {
+    display: inline-block;
+    background: var(--accent-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+    margin-top: 10px;
+  }
+  
+  .project-card a:hover {
+    background: var(--hover-color);
+  }
+  
+  /* Contact Section */
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: none;
+    background: #222;
+    color: white;
+  }
+  
+  button {
+    background: var(--accent-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background: var(--hover-color);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary-color);
+    color: var(--bg-color);
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .projects-container {
+      grid-template-columns: 1fr;
+    }
+    .project-card img {
+      max-width: 100%;
+    }
+  }
