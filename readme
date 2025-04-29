@@ -1,0 +1,16 @@
+# Portfolio Task  
+
+> A personal portfolio showcasing projects, implemented as part of the GrowthLink internship assignment.
+
+## Task Objectives  
+- Build a responsive portfolio website using HTML, CSS, and JavaScript.  
+- Deploy the site via GitHub Pages.  
+- Demonstrate Git workflow: branching, committing, and pushing to a dedicated repo.
+
+## Demo  
+Live site: https://boppidisamarthreddy.github.io/Portfolio/
+
+## Steps to Run Locally  
+1. Clone the repo  
+   ```bash
+   git clone https://github.com/<your-user>/portfolio-task.git
